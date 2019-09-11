@@ -1,22 +1,22 @@
-######  pom.xml
+###  pom.xml
 ```XML
- 	<!--##########################mybatis start##############################-->
+<!--##########################mybatis start##############################-->
 
-		<dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.4.6</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
-        </dependency>
+	<dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>3.4.6</version>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.47</version>
+    </dependency>
 
-    <!--##########################mybatis end##############################-->
+<!--##########################mybatis end##############################-->
 ```
 
-######  mybatis-config.xml
+###  mybatis-config.xml
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
@@ -41,7 +41,7 @@
 </configuration>
 ```
 
-######  Java class
+###  Java class
 ```Java
 	String  resource = "mybatis-config.xml";	
 	InputStream in = Resources.getResourceAsStream(resource);
