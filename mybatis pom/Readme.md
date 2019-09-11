@@ -12,6 +12,23 @@
     <version>5.1.47</version>
 </dependency>
 <!--##########################mybatis end##############################-->
+
+
+<resources>
+	<resource>
+        <directory>src/main/java</directory>
+            <includes>
+            	<include>**/*.xml</include>
+            	<include>**/*.properties</include>
+			</includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+            </includes>
+    </resource>
+</resources>
 ```
 
 ###  mybatis-config.xml
@@ -44,7 +61,7 @@
 driver=com.mysql.jdbc.Driver
 url=jdbc:mysql://localhost:3306/test?useSSL=false
 username=root
-password=cwb110226
+password=password
 ```
 
 ###  Java class
