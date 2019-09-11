@@ -44,7 +44,7 @@
 driver=com.mysql.jdbc.Driver
 url=jdbc:mysql://localhost:3306/test?useSSL=false
 username=root
-password=cwb110226
+password=password
 ```
 
 ###  Java class
