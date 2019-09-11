@@ -1,3 +1,4 @@
+######pom.xml
 ```XML
  	<!--##########################mybatis start##############################-->
 
@@ -15,6 +16,7 @@
     <!--##########################mybatis end##############################-->
 ```
 
+######mybatis-config.xml
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
@@ -39,15 +41,15 @@
 </configuration>
 ```
 
+######Java class
 ```Java
-	String  resource = "mybatis-config.xml";
-		
-		InputStream in = Resources.getResourceAsStream(resource);
-		SqlSessionFactoryBuilder ssfb = new SqlSessionFactoryBuilder();
-		SqlSessionFactory ssf = ssfb.build(in);
-		SqlSession session = ssf.openSession();
-		User user = session.selectOne("testMapper.selectUser",1);
-		return user;
+	String  resource = "mybatis-config.xml";	
+	InputStream in = Resources.getResourceAsStream(resource);
+	SqlSessionFactoryBuilder ssfb = new SqlSessionFactoryBuilder();
+	SqlSessionFactory ssf = ssfb.build(in);
+	SqlSession session = ssf.openSession();
+	User user = session.selectOne("testMapper.selectUser",1);
+	return user;
 ```
 
 
