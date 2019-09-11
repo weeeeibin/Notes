@@ -39,6 +39,14 @@
 </configuration>
 ```
 
+### db.properties
+```xml
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/test?useSSL=false
+username=root
+password=cwb110226
+```
+
 ###  Java class
 ```Java
 	String  resource = "mybatis-config.xml";	
