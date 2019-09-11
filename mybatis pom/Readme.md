@@ -18,16 +18,16 @@
 <resources>
 	<resource>
         <directory>src/main/java</directory>
-            <includes>
-            	<include>**/*.xml</include>
-            	<include>**/*.properties</include>
-			</includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*</include>
-            </includes>
+        <includes>
+            <include>**/*.xml</include>
+            <include>**/*.properties</include>
+		</includes>
+    </resource>
+    <resource>
+    	<directory>src/main/resources</directory>
+        <includes>
+            <include>**/*</include>
+        </includes>
     </resource>
 </resources>
 ```
