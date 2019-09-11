@@ -21,7 +21,7 @@
         <includes>
             <include>**/*.xml</include>
             <include>**/*.properties</include>
-	    </includes>
+		</includes>
     </resource>
     <resource>
     	<directory>src/main/resources</directory>
