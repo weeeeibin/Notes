@@ -13,7 +13,8 @@
 </dependency>
 <!--##########################mybatis end##############################-->
 
-
+...
+<plugins></plugins>
 <resources>
 	<resource>
         <directory>src/main/java</directory>
@@ -54,6 +55,19 @@
 		<mapper resource="mapper/testMapper.xml" />
 	</mappers>
 </configuration>
+```
+
+###	Mapper
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="testMapper">
+	<select id="selectUser" parameterType="integer" resultType="tk.i386.entity.User">
+		select * from demo where id = #{id} 
+	</select>
+</mapper>
 ```
 
 ### db.properties
