@@ -78,15 +78,31 @@ username=root
 password=password
 ```
 
-###  Java class
+### Model User.java
 ```Java
-String  resource = "mybatis-config.xml";	
-InputStream in = Resources.getResourceAsStream(resource);
-SqlSessionFactoryBuilder ssfb = new SqlSessionFactoryBuilder();
-SqlSessionFactory ssf = ssfb.build(in);
-SqlSession session = ssf.openSession();
-User user = session.selectOne("testMapper.selectUser",1);
-return user;
+public class User {
+	public int id;
+	public String name;
+	public int age;
+	
+	@Override
+	public String toString() {
+		return "users [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+}
+```
+
+### Controller.Java
+```Java
+public User Controller() throws IOException {
+	String  resource = "mybatis-config.xml";	
+	InputStream in = Resources.getResourceAsStream(resource);
+	SqlSessionFactoryBuilder ssfb = new SqlSessionFactoryBuilder();
+	SqlSessionFactory ssf = ssfb.build(in);
+	SqlSession session = ssf.openSession();
+	User user = session.selectOne("testMapper.selectUser",1);
+	return user;
+}
 ```
 
 
