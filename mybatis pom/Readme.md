@@ -78,7 +78,7 @@ username=root
 password=password
 ```
 
-### Model User.java
+### User.java
 ```Java
 public class User {
 	public int id;
