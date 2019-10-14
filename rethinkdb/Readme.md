@@ -1,5 +1,5 @@
 
-#### rethinkdb 常用命令
+## rethinkdb 常用命令
 ##### 没有文档咱就自己写！
 
 ```json
