@@ -65,8 +65,8 @@
 ```
 
 ```node
-    r.table('projects').filter({address:"北京市"}) //匹配address为北京市的项目
-    r.table('projects').filter({address:"北京市"})("classChoose") //匹配address为北京市项目下的classChoose
-    r.table('projects').filter(r.row("address").match('新')) //模糊查询address含有"新"的项目
-    r.table('projects').filter(r.row("classChoose").toJsonString().match("科技")) //模糊查询classChoose含有"科技"的项目 针对array模糊查询 
+    r.table('projects').filter({address:"北京市"})                  //匹配address为北京市的项目
+    r.table('projects').filter({address:"北京市"})("classChoose")   //匹配address为北京市项目下的classChoose
+    r.table('projects').filter(r.row("address").match('新'))        //模糊查询address含有"新"的项目
+    r.table('projects').filter(r.row("classChoose").toJsonString().match("科技"))   //模糊查询classChoose含有"科技"的项目 针对array模糊查询 
 ```
