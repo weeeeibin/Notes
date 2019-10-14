@@ -34,7 +34,7 @@
         "videoUrl": "https://dxd-1256577846.cos.ap-beijing.myqcloud.com/2423a4c5-b8e4-4fed-93a7-38f8f645be1a",
     } 
     
-    { 
+    {
         "address": "北京市" , 
         "business": "crowd" , 
         "classChoose": [ 
