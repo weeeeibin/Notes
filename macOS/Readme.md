@@ -30,7 +30,7 @@
 + 返回点击安装macOS
 + 选择要安装的磁盘 一路下一步即可
 
-###EFI 驱动制作
+### EFI 驱动制作
 	驱动需要放置在/EFI/CLOVER/kexts/Other
 + 电池驱动 [ACPIBatteryManager.kext](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads/)
 + 声卡驱动 [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)
