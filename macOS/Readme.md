@@ -2,7 +2,7 @@
 > 版本：macOS Mojave 10.14.6 <br/>
 > 提示：<br/>
 &emsp; 1.如果您的N卡支持GSYNC技术 安装笔记将不适合您 N卡用户请安装10.13版本使用WebDriver驱动<br/>
-&emsp;&emsp; &emsp; 10.13后的系统不支持WebDriver 但能拥有小部分N卡能够免驱<br/>
+&emsp;&emsp; 10.13后的系统不支持WebDriver 但能拥有小部分N卡能够免驱<br/>
 &emsp; 2.笔记本需要拥有集成显卡、AMD免驱显卡、NVIDIA免驱显卡<br/>
 &emsp; 3.笔记本需要有免驱无线网卡或usb免驱无线网卡才能使用无线局域网 蓝牙设备可能受到影响<br/>
 &emsp; 4.没有什么问题是配置EFI解决不了的 如果有那就在配置一下<br/>
