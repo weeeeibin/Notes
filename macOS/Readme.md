@@ -62,4 +62,4 @@
 	+ SSDT-PNLF.aml 移动到 /EFI/Clover/ACPI/Patched/ 目录下
 
 
-![macOS](https://github.com/814792647/Notes/tree/master/macOS/macos.png "macOS")
+![macOS](https://github.com/814792647/Notes/blob/master/macOS/macos.png "macOS")
