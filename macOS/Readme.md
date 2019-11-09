@@ -8,7 +8,7 @@
 &emsp; 4.没有什么问题是配置EFI解决不了的 如果有那就在配置一下
 
 ### 制作安装盘
-+ 下载dmg系统镜像 [下载链接](https://www.baidu.com/) 默认EFI可直接驱动部分设备
++ 下载dmg系统镜像 [下载链接](https://blog.daliansky.net/macOS-Mojave-10.14.6-18G87-Release-version-with-Clover-5033-original-image.html) 默认EFI可直接驱动部分设备
 + 下载balenaEtcher 准备一个8G以上的U盘
 + 制作安装盘
 	+ 插入U盘打开balenaEtcher 点击Select image选择下载好的dmg文件 //如有提示点击continue
@@ -50,16 +50,16 @@
 	+ 没有兼容显卡可以尝试万能驱动 无需配置 但可能会破音、声音小等未知问题
 	+ 万能驱动名称：VoodooHD.kext
 + 集成显卡id注入
+	+ [集成显卡ID对照表](https://www.jianshu.com/p/f78f48f677c7?tdsourcetag=s_pctim_aiomsg)
 	+ 打开/EFI/CLOVER/config.plist
 	+ 搜索Graphics 修改key为ig-platform-id内string标签的值为集成显卡id
 		```xml
 	<key>ig-platform-id</key>
 	<string>显卡id</string>
 	```
-	[集成显卡ID对照表](https://www.jianshu.com/p/f78f48f677c7?tdsourcetag=s_pctim_aiomsg)
 + 背光驱动 [AppleBacklightFixup.kext/SSDT-PNLF.aml](https://bitbucket.org/RehabMan/applebacklightfixup/downloads/)
 	+ 将 AppleBacklightFixup.kext 移动到 EFI\EFI\CLOVER\kexts\Other 目录下
 	+ SSDT-PNLF.aml 移动到 /EFI/Clover/ACPI/Patched/ 目录下
 
 
-![macOS](https://github.com/814792647/Notes/blob/master/macOS/macos.png "macOS")
+![macos](https://github.com/814792647/Notes/blob/master/macOS/macos.png "macos")
